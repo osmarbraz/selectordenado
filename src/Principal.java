@@ -17,7 +17,7 @@
  * @author Osmar de Oliveira Braz Junior
  */
 public class Principal {
-    
+
     /**
      * Realiza a intercação sem sentinela
      *
@@ -27,8 +27,8 @@ public class Principal {
      * @param r Fim do vetor
      */
     public static void merge(int A[], int p, int q, int r) {
-        int B[] = new int[r + 1]; 
-        
+        int B[] = new int[r + 1];
+
         for (int i = p; i <= q; i++) {
             B[i] = A[i];
         }
@@ -50,12 +50,11 @@ public class Principal {
     }
 
     /**
-     * Mergesort sem sentinela.
-     * Algoritmos de ordenação podem ser ou não in-place ou estáveis.
-     * Um método de ordenação é estável se elementos iguais ocorrem no 
-     * vetor ordenado na mesma ordem em que são passados na entrada.
-     * O mergesort é estável. 
-     * 
+     * Mergesort sem sentinela. Algoritmos de ordenação podem ser ou não
+     * in-place ou estáveis. Um método de ordenação é estável se elementos
+     * iguais ocorrem no vetor ordenado na mesma ordem em que são passados na
+     * entrada. O mergesort é estável.
+     *
      * Complexidade no pior caso é Theta(n log n)
      *
      * @param A Vetor a ser ordenado
@@ -70,20 +69,23 @@ public class Principal {
             merge(A, p, q, r);          //Theta(n)
         }
     }
-    
+
     /**
      * Ordena o vetor A utilizando o Mergesort
+     *
      * @param A Vetor a ser ordenado
      * @param n Quantidade de elementos do vetor A
      */
-    public static void ordene(int A[], int n){
-        mergesort(A, 0, n-1);
+    public static void ordene(int A[], int n) {
+        mergesort(A, 0, n - 1);
     }
-    
+
     /**
-     * Recebe um vetor A[1...n] e devolve o valor do i-ésimo menor elemento de A.
-     * A complexidade de tempo é O(n log n)
+     * Recebe um vetor A[1...n] e devolve o valor do i-ésimo menor elemento de
+     * A. 
      * 
+     * A complexidade de tempo é O(n log n)
+     *
      * @param A Vetor com os valores
      * @param n Quantidade de elementos do vetor
      * @param i Posição do vetor desejada
@@ -100,13 +102,13 @@ public class Principal {
 
         //Quantidade de elementos
         int n = A.length;
-        
+
         //Posição do i-ésimo termo
         int i = 0;
 
         int menor = selectOrdenado(A, n, i);
-        
-        System.out.println("Menor:" + menor);        
+
+        System.out.println("Menor:" + menor);
     }
-    
+
 }
