@@ -94,8 +94,11 @@ public class Principal {
 
         //Quantidade de elementos
         int n = A.length;
+        
+        //Posição do i-ésimo termo
+        int i = 0;
 
-        int menor = selectOrdenado(A, n, 0);
+        int menor = selectOrdenado(A, n, i);
         
         System.out.println("Menor:" + menor);        
     }
