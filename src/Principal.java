@@ -123,10 +123,17 @@ public class Principal {
 
         //Posição do i-ésimo termo
         int i = 1;
-
         int menor = selectOrdenado(A, n, i);
-
-        System.out.println("Menor:" + menor);
+        System.out.println("1o menor:" + menor);
+        
+        //Posição do i-ésimo termo
+        i = 3;
+        menor = selectOrdenado(A, n, i);
+        System.out.println("3o menor:" + menor);
+        
+        //Posição do maior termo
+        i = n;
+        menor = selectOrdenado(A, n, i);
+        System.out.println("no maior:" + menor);      
     }
-
 }
